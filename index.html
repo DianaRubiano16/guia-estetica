@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Guía Dra. Ximena Palacio</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <!-- PORTADA -->
+  <section class="portada">
+    <div class="contenido-portada">
+      <h1>Guía Estética</h1>
+      <p>Ubicación: Bogotá</p>
+      <button onclick="mostrarContenido()">Continuar</button>
+    </div>
+  </section>
+
+  <!-- SECCIÓN TARJETAS -->
+  <section class="tarjetas" id="pantalla-tarjetas" style="display: none;">
+    <div class="tarjeta" onclick="mostrarInfo(this)">
+      <h2>Hidrolipoclasia</h2>
+      <div class="info">
+        <img src="imagenes/hidrolipoclasia.png" alt="Hidrolipoclasia"/>
+        <p>Es un procedimiento que reduce grasa localizada mediante infiltración de soluciones hipotónicas y aplicación de ultrasonido.</p>
+      </div>
+    </div>
+    <div class="tarjeta" onclick="mostrarInfo(this)">
+      <h2>Rinomodelación</h2>
+      <div class="info">
+        <img src="imagenes/rinomodelacion.png" alt="Rinomodelación"/>
+        <p>Procedimiento no quirúrgico con ácido hialurónico para mejorar el perfil de la nariz sin cirugía.</p>
+      </div>
+    </div>
+    <div class="tarjeta" onclick="mostrarInfo(this)">
+      <h2>Perfilamiento Facial</h2>
+      <div class="info">
+        <img src="imagenes/perfilamiento.png" alt="Perfilamiento"/>
+        <p>Tratamiento estético que armoniza el rostro mediante aplicación de rellenos en zonas clave como pómulos, mentón y mandíbula.</p>
+      </div>
+    </div>
+    <div class="tarjeta" onclick="mostrarInfo(this)">
+      <h2>Mesoterapia</h2>
+      <div class="info">
+        <img src="imagenes/mesoterapia.png" alt="Mesoterapia"/>
+        <p>Inyecciones de vitaminas, enzimas o medicamentos para rejuvenecer y tonificar la piel o eliminar grasa localizada.</p>
+      </div>
+    </div>
+    <div class="tarjeta" onclick="mostrarInfo(this)">
+      <h2>Limpieza Facial Profunda</h2>
+      <div class="info">
+        <img src="imagenes/limpieza.png" alt="Limpieza Facial"/>
+        <p>Procedimiento que elimina impurezas, puntos negros y células muertas, dejando la piel limpia y renovada.</p>
+      </div>
+    </div>
+    <div class="tarjeta" onclick="mostrarInfo(this)">
+      <h2>Plasma Rico en Plaquetas</h2>
+      <div class="info">
+        <img src="imagenes/plasma.png" alt="Plasma Rico en Plaquetas"/>
+        <p>Tratamiento de bioestimulación con tu propia sangre, para regenerar la piel, mejorar arrugas y estimular colágeno.</p>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    function mostrarContenido() {
+      document.querySelector(".portada").style.display = "none";
+      document.getElementById("pantalla-tarjetas").style.display = "grid";
+    }
+
+    function mostrarInfo(tarjeta) {
+      tarjeta.classList.toggle("activa");
+    }
+  </script>
+</body>
+</html>
