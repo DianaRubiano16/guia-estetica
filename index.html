@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guía Dra. Ximena Palacio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Pantalla de portada -->
+    <div class="portada" id="portada">
+        <div class="texto-portada">Guía Estética</div>
+        <button id="continuarBtn">Continuar</button>
+    </div>
+
+    <!-- Sección de tarjetas -->
+    <div class="contenedor-tarjetas" id="tarjetas">
+        <div class="tarjeta" onclick="mostrarDescripcion(this)">
+            <img src="imagenes/hidropoclasia.png.png" alt="Hidropoclasia">
+            <h3>Hidropoclasia</h3>
+            <p class="descripcion">Técnica estética que utiliza solución salina para reducir grasa localizada.</p>
+        </div>
+        <div class="tarjeta" onclick="mostrarDescripcion(this)">
+            <img src="imagenes/labios.png.png" alt="Relleno de labios">
+            <h3>Relleno de labios</h3>
+            <p class="descripcion">Mejora el volumen y contorno labial con ácido hialurónico.</p>
+        </div>
+        <div class="tarjeta" onclick="mostrarDescripcion(this)">
+            <img src="imagenes/plasma.png.png" alt="Plasma Rico en Plaquetas">
+            <h3>Plasma Rico en Plaquetas</h3>
+            <p class="descripcion">Estimula la regeneración con factores de crecimiento de tu propia sangre.</p>
+        </div>
+        <div class="tarjeta" onclick="mostrarDescripcion(this)">
+            <img src="imagenes/rinomodelacion.png" alt="Rinomodelación">
+            <h3>Rinomodelación</h3>
+            <p class="descripcion">Moldea la nariz sin cirugía usando ácido hialurónico.</p>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
