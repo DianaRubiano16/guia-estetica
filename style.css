@@ -6,7 +6,7 @@ body {
 
 /* Portada */
 .portada {
-    background-image: url('imagenes/1.png');
+    background-image: url('imagenes/portada.png');
     background-size: cover;
     background-position: center;
     height: 100vh;
